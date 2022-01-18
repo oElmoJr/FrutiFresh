@@ -1,11 +1,10 @@
-import AppRoutes from "./routes";
+import React from "react";
 
 function App() {
   return (
     <>
-      <AppRoutes />
+      <h1>Your Bag</h1>
     </>
   );
 }
-
 export default App;
