@@ -11,6 +11,7 @@ import {
 
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import AccountCircle from "@mui/icons-material/AccountCircle";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -35,15 +36,17 @@ export default function Header() {
           >
             hortifruti
           </Typography>
-          <IconButton
-            size="large"
-            aria-label="show 4 new mails"
-            color="primary"
-          >
-            <Badge badgeContent={4} color="error">
-              <LocalMallIcon />
-            </Badge>
-          </IconButton>
+          <Link to={`/bag`}>
+            <IconButton
+              size="large"
+              aria-label="show 4 new mails"
+              color="primary"
+            >
+              <Badge badgeContent={4} color="error">
+                <LocalMallIcon />
+              </Badge>
+            </IconButton>
+          </Link>
           <IconButton
             size="large"
             aria-label="account of current user"
